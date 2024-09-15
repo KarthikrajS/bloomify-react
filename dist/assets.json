@@ -1,0 +1,297 @@
+{
+  "_chunk-!~{00h}~.js": {
+    "file": "assets/static/onRenderClient.CgB8zqOM.css",
+    "src": "_chunk-!~{00h}~.js"
+  },
+  "_chunk-BzsjNNXU.js": {
+    "file": "assets/chunks/chunk-BzsjNNXU.js",
+    "name": "useData",
+    "imports": [
+      "_chunk-uGg6OmiJ.js"
+    ]
+  },
+  "_chunk-CP6xMo_C.js": {
+    "file": "assets/chunks/chunk-CP6xMo_C.js",
+    "name": "Card",
+    "imports": [
+      "_chunk-uGg6OmiJ.js"
+    ]
+  },
+  "_chunk-CQxvNZJy.js": {
+    "file": "assets/chunks/chunk-CQxvNZJy.js",
+    "name": "useFetch",
+    "imports": [
+      "_chunk-uGg6OmiJ.js"
+    ]
+  },
+  "_chunk-VWaDGczM.js": {
+    "file": "assets/chunks/chunk-VWaDGczM.js",
+    "name": "index"
+  },
+  "_chunk-eJmAJtGH.js": {
+    "file": "assets/chunks/chunk-eJmAJtGH.js",
+    "name": "renderPageClientSide"
+  },
+  "_chunk-uGg6OmiJ.js": {
+    "file": "assets/chunks/chunk-uGg6OmiJ.js",
+    "name": "_onRenderClient",
+    "imports": [
+      "_chunk-eJmAJtGH.js"
+    ],
+    "css": [
+      "assets/static/onRenderClient.CgB8zqOM.css"
+    ]
+  },
+  "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js": {
+    "file": "assets/entries/entry-client-routing.CMh3nLTW.js",
+    "name": "entries/entry-client-routing",
+    "src": "node_modules/vike/dist/esm/client/client-routing-runtime/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_chunk-eJmAJtGH.js"
+    ],
+    "dynamicImports": [
+      "virtual:vike:pageConfigValuesAll:client:/pages/_error",
+      "virtual:vike:pageConfigValuesAll:client:/pages/about",
+      "virtual:vike:pageConfigValuesAll:client:/pages/auth/sign-in",
+      "virtual:vike:pageConfigValuesAll:client:/pages/auth/sign-up",
+      "virtual:vike:pageConfigValuesAll:client:/pages/checkout",
+      "virtual:vike:pageConfigValuesAll:client:/pages/index",
+      "virtual:vike:pageConfigValuesAll:client:/pages/order",
+      "virtual:vike:pageConfigValuesAll:client:/pages/product",
+      "virtual:vike:pageConfigValuesAll:client:/pages/product/@id",
+      "virtual:vike:pageConfigValuesAll:client:/pages/products",
+      "virtual:vike:pageConfigValuesAll:client:/pages/products/@id",
+      "virtual:vike:pageConfigValuesAll:client:/pages/profile",
+      "virtual:vike:pageConfigValuesAll:client:/pages/settings",
+      "virtual:vike:pageConfigValuesAll:client:/pages/star-wars/@id",
+      "virtual:vike:pageConfigValuesAll:client:/pages/star-wars/index"
+    ]
+  },
+  "renderer/logo.svg": {
+    "file": "assets/static/logo.DyAi1kBK.svg",
+    "src": "renderer/logo.svg"
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/_error": {
+    "file": "assets/entries/pages_error.D2Fw_Fyr.js",
+    "name": "entries/pages/_error",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/_error",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-eJmAJtGH.js"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/about": {
+    "file": "assets/entries/pages_about.DRZE48Cw.js",
+    "name": "entries/pages/about",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/about",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-eJmAJtGH.js"
+    ],
+    "css": [
+      "assets/static/about.Bv6kHCCM.css"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/auth/sign-in": {
+    "file": "assets/entries/pages_auth_sign-in.DCComjCJ.js",
+    "name": "entries/pages/auth/sign-in",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/auth/sign-in",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-eJmAJtGH.js"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/auth/sign-up": {
+    "file": "assets/entries/pages_auth_sign-up.Bhjse_Zv.js",
+    "name": "entries/pages/auth/sign-up",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/auth/sign-up",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-eJmAJtGH.js"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/checkout": {
+    "file": "assets/entries/pages_checkout.C7elg0NE.js",
+    "name": "entries/pages/checkout",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/checkout",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-eJmAJtGH.js",
+      "_chunk-VWaDGczM.js"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/index": {
+    "file": "assets/entries/pages_index.DKTuTidL.js",
+    "name": "entries/pages/index",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/index",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-CP6xMo_C.js",
+      "_chunk-CQxvNZJy.js",
+      "_chunk-eJmAJtGH.js"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/order": {
+    "file": "assets/entries/pages_order.K-RD0U9U.js",
+    "name": "entries/pages/order",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/order",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-VWaDGczM.js",
+      "_chunk-eJmAJtGH.js"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/product": {
+    "file": "assets/entries/pages_product.D3kB7UOS.js",
+    "name": "entries/pages/product",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/product",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-eJmAJtGH.js"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/product/@id": {
+    "file": "assets/entries/pages_product_-id.Dt0haU-I.js",
+    "name": "entries/pages/product/@id",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/product/@id",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-CQxvNZJy.js",
+      "_chunk-eJmAJtGH.js"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/products": {
+    "file": "assets/entries/pages_products.D3kB7UOS.js",
+    "name": "entries/pages/products",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/products",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-eJmAJtGH.js"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/products/@id": {
+    "file": "assets/entries/pages_products_-id.BGritLSn.js",
+    "name": "entries/pages/products/@id",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/products/@id",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-CQxvNZJy.js",
+      "_chunk-CP6xMo_C.js",
+      "_chunk-eJmAJtGH.js"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/profile": {
+    "file": "assets/entries/pages_profile.DrAonZck.js",
+    "name": "entries/pages/profile",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/profile",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-eJmAJtGH.js"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/settings": {
+    "file": "assets/entries/pages_settings.pY4xM9TR.js",
+    "name": "entries/pages/settings",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/settings",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-eJmAJtGH.js"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/star-wars/@id": {
+    "file": "assets/entries/pages_star-wars_-id.CAYeJphP.js",
+    "name": "entries/pages/star-wars/@id",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/star-wars/@id",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-BzsjNNXU.js",
+      "_chunk-eJmAJtGH.js"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  },
+  "virtual:vike:pageConfigValuesAll:client:/pages/star-wars/index": {
+    "file": "assets/entries/pages_star-wars_index.BVnMDbYp.js",
+    "name": "entries/pages/star-wars/index",
+    "src": "virtual:vike:pageConfigValuesAll:client:/pages/star-wars/index",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_chunk-uGg6OmiJ.js",
+      "_chunk-BzsjNNXU.js",
+      "_chunk-eJmAJtGH.js"
+    ],
+    "assets": [
+      "assets/static/letter-b.BXTWxE4S.png"
+    ]
+  }
+}
