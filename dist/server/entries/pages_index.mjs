@@ -1,7 +1,7 @@
 import { i as import1 } from "../chunks/chunk-954_1HS1.js";
 import { jsxs, jsx } from "react/jsx-runtime";
 import { useState, Fragment } from "react";
-import { C as Card } from "../chunks/chunk-C-UgbkmZ.js";
+import { C as Card } from "../chunks/chunk-roYIq7Kj.js";
 import { u as useFetch } from "../chunks/chunk-RXAyvvl2.js";
 import "react-dom/server";
 import "prop-types";
@@ -132,7 +132,7 @@ const Categories = () => {
   ] });
 };
 function Page() {
-  return /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsxs("div", { children: [
+  return /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsxs("div", { className: "relative w-[1440px] h-[4370] bg-[#FFFFFF]", children: [
     /* @__PURE__ */ jsx(Slider, {}),
     /* @__PURE__ */ jsx(FeaturedProducts, { type: "featured" }),
     /* @__PURE__ */ jsx(Categories, {}),

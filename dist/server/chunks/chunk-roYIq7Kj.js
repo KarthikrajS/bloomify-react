@@ -1,7 +1,7 @@
 import { jsx, jsxs } from "react/jsx-runtime";
 import "react";
 const Card = (props) => {
-  var _a, _b, _c, _d, _e, _f, _g, _h;
+  var _a, _b, _c, _d, _e, _f, _g, _h, _i;
   const { item } = props;
   console.log(item, "itemqweq");
   return /* @__PURE__ */ jsx("a", { className: "link", href: `/product/${item.id}`, children: /* @__PURE__ */ jsxs("div", { className: "w-[280px] flex flex-col gap-[10px] mb-[50px]", children: [
@@ -28,7 +28,7 @@ const Card = (props) => {
     /* @__PURE__ */ jsxs("div", { className: "flex gap-[20px]", children: [
       /* @__PURE__ */ jsxs("h3", { className: "text-[18px] font-semibold first:text-gray-400 first:line-through", children: [
         "₹",
-        item.oldPrice || (item == null ? void 0 : item.attributes.price) + 20
+        ((_i = item == null ? void 0 : item.attributes) == null ? void 0 : _i.oldPrice) || (item == null ? void 0 : item.attributes.price) + 20
       ] }),
       /* @__PURE__ */ jsxs("h3", { className: "text-[18px] font-semibold first:text-gray-400 first:line-through", children: [
         "₹",

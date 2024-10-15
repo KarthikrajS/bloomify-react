@@ -5,13 +5,24 @@ import { u as useFetch } from "../chunks/chunk-RXAyvvl2.js";
 import "vike/abort";
 import "js-cookie";
 import { navigate } from "vike/client/router";
+import VideoThumbnail from "react-video-thumbnail";
 import "react-dom/server";
 import "prop-types";
 import "axios";
 import "react-cookie";
 import "vike/server";
+const imageExtList = [
+  ".jpg",
+  ".jpeg",
+  ".png",
+  ".gif",
+  ".apng",
+  ".avif",
+  ".svg",
+  ".webp"
+];
 function Page(pageContext) {
-  var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r;
+  var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _A, _B, _C, _D, _E, _F, _G, _H, _I, _J, _K, _L, _M, _N, _O, _P, _Q, _R, _S, _T;
   const { id } = pageContext;
   const { addItem, addItemToWishList, user } = useAuthContext();
   console.log(id, "id");
@@ -33,45 +44,60 @@ function Page(pageContext) {
       navigate("/auth/sign-in");
     }
   };
-  console.log(data2 == null ? void 0 : data2.attributes, "data?.attributes");
+  console.log((_d = (_c = (_b = (_a = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _a.img) == null ? void 0 : _b.data) == null ? void 0 : _c.attributes) == null ? void 0 : _d.ext, "data?.attributes");
   return /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsx("div", { className: "px-[20px] py-[50px] flex gap-[50px]", children: loading ? "loading" : /* @__PURE__ */ jsxs(Fragment$1, { children: [
     /* @__PURE__ */ jsxs("div", { className: "flex-1 flex gap-[20px]", children: [
-      /* @__PURE__ */ jsxs("div", { className: "flex-1 max-w-[68px]", children: [
-        /* @__PURE__ */ jsx(
+      /* @__PURE__ */ jsxs("div", { className: "flex-1  gap-[20px] max-w-[68px]", children: [
+        imageExtList.indexOf((_h = (_g = (_f = (_e = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _e.img) == null ? void 0 : _f.data) == null ? void 0 : _g.attributes) == null ? void 0 : _h.ext) > -1 ? /* @__PURE__ */ jsx(
           "img",
           {
             className: "w-[100%] h-[150px] object-cover cursor-pointer mb-[10px]",
-            src: "https://strapi-achf.onrender.com" + ((_d = (_c = (_b = (_a = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _a.img) == null ? void 0 : _b.data) == null ? void 0 : _c.attributes) == null ? void 0 : _d.url),
+            src: "https://strapi-achf.onrender.com" + ((_l = (_k = (_j = (_i = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _i.img) == null ? void 0 : _j.data) == null ? void 0 : _k.attributes) == null ? void 0 : _l.url),
             alt: "",
             onClick: (e) => setSelectedImg("img")
           }
-        ),
-        /* @__PURE__ */ jsx(
+        ) : /* @__PURE__ */ jsx("div", { className: "w-[100%] h-[150px] object-cover cursor-pointer mb-[10px]", onClick: (e) => setSelectedImg("img"), children: /* @__PURE__ */ jsx(
+          VideoThumbnail,
+          {
+            videoUrl: "https://strapi-achf.onrender.com" + ((_p = (_o = (_n = (_m = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _m.img) == null ? void 0 : _n.data) == null ? void 0 : _o.attributes) == null ? void 0 : _p.url),
+            thumbnailHandler: (thumbnail) => console.log(thumbnail, "Asdasd")
+          }
+        ) }),
+        imageExtList.indexOf((_t = (_s = (_r = (_q = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _q.img2) == null ? void 0 : _r.data) == null ? void 0 : _s.attributes) == null ? void 0 : _t.ext) > -1 ? /* @__PURE__ */ jsx(
           "img",
           {
             className: "w-[100%] h-[150px] object-cover cursor-pointer mb-[10px]",
-            src: "https://strapi-achf.onrender.com" + ((_h = (_g = (_f = (_e = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _e.img2) == null ? void 0 : _f.data) == null ? void 0 : _g.attributes) == null ? void 0 : _h.url),
+            src: "https://strapi-achf.onrender.com" + ((_x = (_w = (_v = (_u = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _u.img2) == null ? void 0 : _v.data) == null ? void 0 : _w.attributes) == null ? void 0 : _x.url),
             alt: "",
             onClick: (e) => setSelectedImg("img2")
           }
-        )
+        ) : /* @__PURE__ */ jsx("div", { className: "w-[100%] h-[150px] object-cover cursor-pointer mb-[10px]", onClick: (e) => setSelectedImg("img2"), children: /* @__PURE__ */ jsx(
+          VideoThumbnail,
+          {
+            videoUrl: "https://strapi-achf.onrender.com" + ((_A = (_z = (_y = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _y.img2.data) == null ? void 0 : _z.attributes) == null ? void 0 : _A.url),
+            thumbnailHandler: (thumbnail) => console.log(thumbnail, "Asdasd")
+          }
+        ) })
       ] }),
-      /* @__PURE__ */ jsx("div", { className: "flex-1", children: /* @__PURE__ */ jsx(
+      /* @__PURE__ */ jsx("div", { className: "flex-1", children: imageExtList.indexOf((_D = (_C = (_B = data2 == null ? void 0 : data2.attributes[selectedImg]) == null ? void 0 : _B.data) == null ? void 0 : _C.attributes) == null ? void 0 : _D.ext) > -1 ? /* @__PURE__ */ jsx(
         "img",
         {
           className: "w-[100%] max-h-[800px] object-cover",
-          src: "https://strapi-achf.onrender.com" + ((_k = (_j = (_i = data2 == null ? void 0 : data2.attributes[selectedImg]) == null ? void 0 : _i.data) == null ? void 0 : _j.attributes) == null ? void 0 : _k.url),
+          src: "https://strapi-achf.onrender.com" + ((_G = (_F = (_E = data2 == null ? void 0 : data2.attributes[selectedImg]) == null ? void 0 : _E.data) == null ? void 0 : _F.attributes) == null ? void 0 : _G.url),
           alt: ""
         }
-      ) })
+      ) : /* @__PURE__ */ jsxs("div", { className: "w-[100%] max-h-[800px] object-cover", children: [
+        " ",
+        /* @__PURE__ */ jsx("video", { src: "https://strapi-achf.onrender.com" + ((_J = (_I = (_H = data2 == null ? void 0 : data2.attributes[selectedImg]) == null ? void 0 : _H.data) == null ? void 0 : _I.attributes) == null ? void 0 : _J.url), width: "750", height: "500", controls: true })
+      ] }) })
     ] }),
     /* @__PURE__ */ jsxs("div", { className: "flex flex-1 flex-col gap-[30px]", children: [
-      /* @__PURE__ */ jsx("h1", { children: (_l = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _l.title }),
+      /* @__PURE__ */ jsx("h1", { children: (_K = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _K.title }),
       /* @__PURE__ */ jsxs("span", { className: "price", children: [
         "₹",
-        (_m = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _m.price
+        (_L = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _L.price
       ] }),
-      /* @__PURE__ */ jsx("p", { className: "text-[18px] font-semibold text-justify", children: (_n = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _n.desc }),
+      /* @__PURE__ */ jsx("p", { className: "text-[18px] font-semibold text-justify", children: (_M = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _M.desc }),
       /* @__PURE__ */ jsxs("div", { className: "flex items-center gap-[10px]", children: [
         /* @__PURE__ */ jsx(
           "button",
@@ -112,17 +138,17 @@ function Page(pageContext) {
       /* @__PURE__ */ jsxs("div", { className: "flex flex-col gap-[10px] text-gray-400 text-[14px] mt-[30px]", children: [
         /* @__PURE__ */ jsxs("span", { children: [
           "Product Type: ",
-          (_o = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _o.categories.data[0].attributes.title
+          (_Q = (_P = (_O = (_N = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _N.categories) == null ? void 0 : _O.data[0]) == null ? void 0 : _P.attributes) == null ? void 0 : _Q.title
         ] }),
-        /* @__PURE__ */ jsx("span", { children: (_p = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _p.tags })
+        /* @__PURE__ */ jsx("span", { children: (_R = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _R.tags })
       ] }),
       /* @__PURE__ */ jsx("hr", { className: "w-[200px] border-solid border-[rgb(238, 237, 237)] border-1" }),
       /* @__PURE__ */ jsxs("div", { className: "flex flex-col gap-[10px] text-gray-400 text-[14px] mt-[30px]", children: [
         /* @__PURE__ */ jsx("span", { children: "DESCRIPTION" }),
-        /* @__PURE__ */ jsx("span", { children: (_q = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _q.desc }),
+        /* @__PURE__ */ jsx("span", { children: (_S = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _S.desc }),
         /* @__PURE__ */ jsx("hr", { className: "w-[200px] border-solid border-[rgb(238, 237, 237)] border-1" }),
         /* @__PURE__ */ jsx("span", { children: "ADDITIONAL INFORMATION" }),
-        /* @__PURE__ */ jsx("span", { children: (_r = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _r.additionalInfo })
+        /* @__PURE__ */ jsx("span", { children: (_T = data2 == null ? void 0 : data2.attributes) == null ? void 0 : _T.additionalInfo })
       ] })
     ] })
   ] }) }) });

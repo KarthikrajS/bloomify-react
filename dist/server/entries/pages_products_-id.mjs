@@ -2,7 +2,7 @@ import { i as import1 } from "../chunks/chunk-954_1HS1.js";
 import { jsx, jsxs } from "react/jsx-runtime";
 import { useState } from "react";
 import { u as useFetch } from "../chunks/chunk-RXAyvvl2.js";
-import { C as Card } from "../chunks/chunk-C-UgbkmZ.js";
+import { C as Card } from "../chunks/chunk-roYIq7Kj.js";
 import "react-dom/server";
 import "prop-types";
 import "js-cookie";
