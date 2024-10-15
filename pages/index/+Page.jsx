@@ -9,7 +9,7 @@ import Categories from '../../renderer/components/Categories/Categories'
 function Page() {
   return (
     <Fragment>
-      <div>
+      <div className='relative w-[1440px] h-[4370] bg-[#FFFFFF]'>
         <Slider />
         <FeaturedProducts type="featured"/>
         <Categories />

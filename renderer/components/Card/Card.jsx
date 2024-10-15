@@ -27,7 +27,7 @@ const Card = (props) => {
                 </div>
                 <h2>{item?.attributes.title}</h2>
                 <div className="flex gap-[20px]">
-                    <h3 className="text-[18px] font-semibold first:text-gray-400 first:line-through">₹{item.oldPrice || item?.attributes.price + 20}</h3>
+                    <h3 className="text-[18px] font-semibold first:text-gray-400 first:line-through">₹{item?.attributes?.oldPrice || item?.attributes.price + 20}</h3>
                     <h3 className="text-[18px] font-semibold first:text-gray-400 first:line-through">₹{item?.attributes.price}</h3>
                 </div>
             </div>

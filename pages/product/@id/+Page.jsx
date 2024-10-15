@@ -4,8 +4,18 @@ import { useAuthContext } from '../../../renderer/components/AuthProvider/AuthPr
 import { render } from 'vike/abort';
 import Cookies from 'js-cookie';
 import { navigate } from 'vike/client/router';
+import VideoThumbnail from 'react-video-thumbnail';
 // import { usePageContext } from '../../../renderer/usePageContext'
-
+const imageExtList = [
+  '.jpg',
+  '.jpeg',
+  '.png',
+  '.gif',
+  '.apng',
+  '.avif',
+  '.svg',
+  '.webp'
+];
 
 export { Page }
 /*import React from "react";
@@ -152,7 +162,7 @@ function Page(pageContext) {
     }
 
   }
-  console.log(data?.attributes,"data?.attributes");
+  console.log(data?.attributes?.img?.data?.attributes?.ext, "data?.attributes");
   return (
     <Fragment>
       <div className="px-[20px] py-[50px] flex gap-[50px]">
@@ -161,32 +171,52 @@ function Page(pageContext) {
         ) : (
           <>
             <div className="flex-1 flex gap-[20px]">
-              <div className="flex-1 max-w-[68px]">
-                <img className='w-[100%] h-[150px] object-cover cursor-pointer mb-[10px]'
+              <div className="flex-1  gap-[20px] max-w-[68px]">
+                {imageExtList.indexOf(data?.attributes?.img?.data?.attributes?.ext) > -1 ? <img className='w-[100%] h-[150px] object-cover cursor-pointer mb-[10px]'
                   src={
                     import.meta.env.PUBLIC_ENV__VIKE_UPLOAD_URL +
                     data?.attributes?.img?.data?.attributes?.url
                   }
                   alt=""
                   onClick={(e) => setSelectedImg("img")}
-                />
-                <img className='w-[100%] h-[150px] object-cover cursor-pointer mb-[10px]'
+                /> :
+                  <div className='w-[100%] h-[150px] object-cover cursor-pointer mb-[10px]' onClick={(e) => setSelectedImg("img")}>
+                    <VideoThumbnail
+
+                      videoUrl={import.meta.env.PUBLIC_ENV__VIKE_UPLOAD_URL + data?.attributes?.img?.data?.attributes?.url}
+                      thumbnailHandler={(thumbnail) => console.log(thumbnail, "Asdasd")}
+
+                    />
+                  </div>
+                }
+                {imageExtList.indexOf(data?.attributes?.img2?.data?.attributes?.ext) > -1 ? <img className='w-[100%] h-[150px] object-cover cursor-pointer mb-[10px]'
                   src={
                     import.meta.env.PUBLIC_ENV__VIKE_UPLOAD_URL +
                     data?.attributes?.img2?.data?.attributes?.url
                   }
                   alt=""
                   onClick={(e) => setSelectedImg("img2")}
-                />
+                /> :
+                  <div className='w-[100%] h-[150px] object-cover cursor-pointer mb-[10px]' onClick={(e) => setSelectedImg("img2")}>
+                    <VideoThumbnail
+
+                      videoUrl={import.meta.env.PUBLIC_ENV__VIKE_UPLOAD_URL + data?.attributes?.img2.data?.attributes?.url}
+                      thumbnailHandler={(thumbnail) => console.log(thumbnail, "Asdasd")}
+
+                    />
+                  </div>}
               </div>
               <div className="flex-1">
-                <img className='w-[100%] max-h-[800px] object-cover'
+                {imageExtList.indexOf(data?.attributes[selectedImg]?.data?.attributes?.ext) > -1 ? <img className='w-[100%] max-h-[800px] object-cover'
                   src={
                     import.meta.env.PUBLIC_ENV__VIKE_UPLOAD_URL +
                     data?.attributes[selectedImg]?.data?.attributes?.url
                   }
                   alt=""
-                />
+                /> :
+                  <div className='w-[100%] max-h-[800px] object-cover'> <video src={import.meta.env.PUBLIC_ENV__VIKE_UPLOAD_URL +
+                    data?.attributes[selectedImg]?.data?.attributes?.url} width="750" height="500" controls></video>
+                  </div>}
               </div>
             </div>
             <div className="flex flex-1 flex-col gap-[30px]">
@@ -233,7 +263,7 @@ function Page(pageContext) {
               </div>
               <div className="flex flex-col gap-[10px] text-gray-400 text-[14px] mt-[30px]">
                 {/* <span>Vendor: Polo</span> */}
-                <span>Product Type: {data?.attributes?.categories.data[0].attributes.title}</span>
+                <span>Product Type: {data?.attributes?.categories?.data[0]?.attributes?.title}</span>
                 <span>{data?.attributes?.tags}</span>
               </div>
               <hr className='w-[200px] border-solid border-[rgb(238, 237, 237)] border-1' />
